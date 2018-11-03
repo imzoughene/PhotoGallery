@@ -1,0 +1,2 @@
+php artisan make:controller GalleryController
+php artisan make:controller PhotoController
