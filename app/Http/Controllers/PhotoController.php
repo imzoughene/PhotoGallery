@@ -14,7 +14,7 @@ class PhotoController extends Controller
       die("photo/create");
     }
 
-    //Store
+    //Store Photo
     public function store(Request $request){
 
     }
