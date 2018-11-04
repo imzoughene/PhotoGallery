@@ -16,54 +16,15 @@
 
       <article class="grid-container">
         <div class="grid-x grid-margin-x small-up-2 medium-up-3 large-up-4">
+          <?php foreach ($galleries as $gallery):?>
           <div class="cell">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
+            <a href="/gallery/show/{{$gallery->id}}">
+              <img class="thumbnail" src="/images/{{$gallery->cover_image}}">
+            </a>
+            <h5>{{$gallery->name}}</h5>
+            <p>{{$gallery->description}}</p>
           </div>
-          <div class="cell">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
-          <div class="cell">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
-          <div class="cell">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
-          <div class="cell">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
-          <div class="cell">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
-          <div class="cell">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
-          <div class="cell">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
-          <div class="cell">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
-          <div class="cell">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
-          <div class="cell">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
-          <div class="cell">
-            <img class="thumbnail" src="https://placehold.it/550x550">
-            <h5>My Site</h5>
-          </div>
+        <?php endforeach; ?>
         </div>
 
         <hr>

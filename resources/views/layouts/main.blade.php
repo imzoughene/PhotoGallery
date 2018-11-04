@@ -31,6 +31,11 @@
           <span class="title-bar-title">Mike Mikerson</span>
         </div>
       </div>
+    @if(Session::has("message"))
+      <div  data-alert class="alert-box">
+        {{Session::get("message")}}
+      </div>
+    @endif
     @yield("content")
     <script type="text/javascript" src="/js/vendor/jquery.js"></script>
     <script type="text/javascript" src="/js/vendor/what-input.js"></script>

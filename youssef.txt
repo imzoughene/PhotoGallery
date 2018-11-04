@@ -1,2 +1,9 @@
 php artisan make:controller GalleryController
 php artisan make:controller PhotoController
+------------------------
+php artisan make:migration create_galleries_table --create=galleries
+php artisan make:migration create_photos_table --create=photos
+------------------------
+php artisan migrate
+
+min : 8 composer update
