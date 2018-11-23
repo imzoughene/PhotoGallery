@@ -1,3 +1,9 @@
 .main{
   padding: 20px;
 }
+img{
+  height: 100px;
+}
+.btn-upload{
+  color: #fff !important;
+}
