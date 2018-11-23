@@ -7,3 +7,10 @@ img{
 .btn-upload{
   color: #fff !important;
 }
+.main-img{
+  display: block;
+  width: 60%;
+  height: auto;
+  margin: auto;
+  padding: 30px;
+}

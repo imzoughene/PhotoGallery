@@ -5,5 +5,5 @@ php artisan make:migration create_galleries_table --create=galleries
 php artisan make:migration create_photos_table --create=photos
 ------------------------
 php artisan migrate
-
-min : 8 composer update
+--------------------------
+php artisan make:auth

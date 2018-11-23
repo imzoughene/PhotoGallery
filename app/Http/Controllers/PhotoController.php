@@ -43,7 +43,7 @@ class PhotoController extends Controller
               $image_file_name="noimage.jpg";
             }
             //Insert Photo
-            DB::table("photos")->insert(
+            DB::table($this->table)->insert(
               [
                 "title"       =>$title,
                 "description" =>$description,
@@ -65,6 +65,12 @@ class PhotoController extends Controller
 
     //Show photo details
     public function details($id){
-      die($id);
+      //die($id);
+      // Get Photo
+      $photo = DB::table($this->table)->where("id",$id)->first();
+
+      // Render template
+      return view("photo.details",compact("photo"));
+
     }
 }
